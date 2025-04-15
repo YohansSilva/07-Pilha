@@ -95,14 +95,14 @@ void pop()
 {
 	if(topo == NULL)
 	{
-		cout << "lista vazia!";
+		cout << "lista vazia";
 		return;
 
 	}
 	NO* aux = topo;
 	topo = topo->prox;
 	cout << "elemento excluido" << aux->valor;
-	free(aux);
+	free(topo);
 
 }
 
